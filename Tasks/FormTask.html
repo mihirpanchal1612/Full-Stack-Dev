@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table Task</title>
+</head>
+<body>
+    <table align="center" width="700" cellpadding="10" bgcolor="mistyrose"> 
+        <h1 align="center">Student Registration Form</h1> 
+        <tr>
+            <td>Roll No :</td>
+            <td><input type="Text" id="Roll"></td>
+        </tr>
+        <tr>
+            <td>Student Name:</td>
+            <td> <input type="text" id="First" placeholder="First Name">-
+            <input type="text" id="Last" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="text" size="3" placeholder="Day">
+            <input type="text" size="3" placeholder="Month">
+            <input type="text" size="8" placeholder="Year">DD-MM-YYYY</td>
+        </tr>
+        <tr>
+            <td>Mobile no.:</td>
+            <td><input type="text" size="1" value="+91">
+            <input type="tel"></td>
+        </tr>
+        <tr>
+            <td>Email id :</td>
+            <td><input type="email" placeholder="example@com"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td>
+                <input type="radio" name="Gender">Male  
+                <input type="radio" name="Gender">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Department :</td>
+            <td>
+                <input type="checkbox" name="D">CSE 
+                <input type="checkbox" name="D">IT
+                <input type="checkbox" name="D">ECE
+                <input type="checkbox" name="D">CIVIL
+                <input type="checkbox" name="D">Mech
+            </td>
+        </tr>
+        <tr>
+            <td>Course :</td>
+            <td><select>
+                <option >------Select Option------</option>
+                <option >PHP</option>
+                <option >Python</option>
+                <option >Java</option>
+                <option >C++</option>
+                <option >Javascript</option>
+            </td>
+        </tr>
+        <tr>
+            <td>Student Photo :</td>
+            <td><input type="file" type="image"></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" placeholder="Ahemdabad, Vadodara, Rajkot, etc..."></td>
+        </tr>
+        <tr>
+            <td>Address :</td>
+            <td><textarea cols="40" rows="8"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Register"></td>
+        </tr>
+    </table>
+</body>
+</html>
