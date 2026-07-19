@@ -1,0 +1,81 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../../../Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+*{
+    font-family: gilroy, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.main{
+    background-color: #018029;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 105px;
+    width: 172px;
+}
+.tag{
+    font-size: 65px;
+    color: white;
+}
+.google{
+    height: 49px;
+    width: 162px;
+    margin: 0 20px 0 0;
+}
+.apple{
+    height: 49px;
+    width: 162px;
+    margin: 0 20px 0 0;
+}
+.mainphoto{
+    width: 522px;
+    height: 532px;
+    padding: 0 14px 0 0;
+    justify-self: baseline;
+}
+.line1{
+    margin-top: 50px;
+    justify-items: center;
+}
+.card[class*="card"]{
+    background-image: url(./lightgreensquare.png);
+    background-repeat: no-repeat;
+}
+.offers{
+    justify-content: center;
+    justify-items: center ;
+    display: flex;
+    align-items: center;
+}
+.dishes{
+    margin-top: 50px;
+    /* justify-content: center; */
+    justify-items: center;
+    align-items: center;
+}
+.food[class*="food"]{
+    width: 230px;
+    height: 230px;
+}
+.foods{
+    margin: 100px;
+}
+.foodlist{
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer{
+    background-color: #e4f5ec;
+    justify-items: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+}
