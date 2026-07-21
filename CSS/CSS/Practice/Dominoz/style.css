@@ -1,0 +1,34 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: 0 auto;
+}
+.navbar{
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.navanchor{
+    color: #333641;
+    text-decoration: none;
+    font-size: 28px;
+}
+.content{
+    background-color: #1658a2;
+    /* color: #FFFFFF; */
+    justify-content: space-evenly;
+    
+}
+.contenttext{
+    color: #ffffff;
+    justify-items: left;
+}
+.contentImage{
+    justify-self: right;
+}
+.order{
+    background-color: #28A745;
+}

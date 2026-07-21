@@ -1,0 +1,161 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../../../Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+*{
+    font-family: gilroy, sans-serif;
+    /* border: 1px solid black; */
+    
+}
+.getApp{
+    background-color: #ff5200;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    width: 180px;
+    border-radius: 20px;
+    margin-right: 15px ;
+    border: 2px solid white;
+}
+.signin{
+    background: black;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    width: 180px;
+    border-radius: 20px;
+    margin-left: 15px ;
+    border: 1px solid black;
+}
+header{
+    background-color: #ff5200;
+}
+.logo{
+
+    display: flex;
+    align-items: center;
+}
+.swiggy{
+    width: 160px;
+    height: 48px;
+}
+nav{
+    padding-top:50px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+}
+.navitems a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.tagline{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 48px;
+    color: white;
+    /* padding: 80px; */
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+.textfield{
+    height: 60px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.cardrow{
+    width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+    margin: 0 auto;
+    /* gap: 20px; */
+}
+.card{
+    height: 400px;
+    width: 450px;
+}
+.col-33{
+    width: 33%;
+}
+.h2{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+}
+.foodlist{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.food{
+    height: 160px;
+    width: 144px;
+}
+.noodles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.dessert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.grooming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.grocery{
+    height: 160px;
+    width: 144px;
+}
+.restaurant{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.appBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+
+    height: 251px ;
+    width:  1287px ;
+}
+.foodonline{
+    border: 1px solid black;
+}
+.groceryonline{
+    border: 1px solid black;
+}
+.citylist{
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
