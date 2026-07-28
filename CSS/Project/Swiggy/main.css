@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.nava{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.tagline{
+    font-family: sans-serif;
+    font-size: 48px;
+    color: white;
+}
+.home{
+    background-color: #fF5200;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card1{
+    width: 424px;
+    height: 391px;
+}

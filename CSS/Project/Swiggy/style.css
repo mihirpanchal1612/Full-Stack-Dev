@@ -1,0 +1,339 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./font/Gilroy-ExtraBold.otf);
+}
+@font-face {
+    font-family: gilroy1;
+    src: url(./font/Gilroy-Light.otf);
+}
+
+*{
+    font-family: gilroy, sans-serif;
+    /* border: 1px solid black; */
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.getApp{
+    font-family: gilroy, sans-serif;
+    background-color: #ff5200;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    width: 180px;
+    border-radius: 20px;
+    margin-right: 15px ;
+    border: 2px solid white;
+    align-items: center;
+}
+.getin{
+    height: 23px;
+    width: 23px;
+    color: white
+}
+.signin{
+    font-family: gilroy, sans-serif;
+    background: black;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    width: 180px;
+    border-radius: 20px;
+    margin-left: 15px ;
+    border: 1px solid black;
+}
+header{
+    background-color: #ff5200;
+    position: relative;
+}
+.sideimages1{
+    width: 250px;
+    height: 490px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+.sideimages2{
+    width: 250px;
+    height: 490px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+.logo{
+
+    display: flex;
+    align-items: center;
+}
+.swiggy{
+    width: 160px;
+    height: 48px;
+}
+nav{
+    font-family: gilroy, sans-serif;
+    padding : 30px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 16px;
+    width: 80%;
+    /* margin: 35px; */
+    /* margin-inline: 100px; */
+}
+.navitems{
+    margin: 10px;
+    /* gap: 10px; */
+}
+.navitems a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    /* gap: 30px; */
+}
+.tagline{
+    font-family: gilroy, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    /* padding: 80px; */
+}
+.text1{
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 15px;
+}
+.text2{
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 15px;
+}
+
+.textarea{
+    /* width: 40%; */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* gap: 70px; */
+
+}
+.textfield{
+    font-family: gilroy1, sans-serif;
+    height: 60px;
+    width: 300px;
+    /* border-radius: 20px; */
+    font-size: 16px;
+    margin-right: 20px;
+    border: none;
+}
+.textitems{
+    font-family: gilroy1, sans-serif;
+     height: 60px;
+    width: 500px;
+    /* border-radius: 20px; */
+    font-size: 16px;
+    margin-right: 20px;
+}
+.cardrow{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+}
+.wrapper{
+    padding-top: 100px;
+}
+/* 
+.wrapper{
+     width: 80%; 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    gap:10px
+} */
+
+.card{
+    height: 400px;
+    width: 450px;
+}
+.col-33{
+    width: 33%;
+}
+.col-12{
+    width: 12%;
+    margin: 10px;
+}
+.h2line{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* justify-items: left; */
+}
+.h3line{
+    width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-items: left; */
+}
+.h2{
+    width: 80%;
+    display: flex;
+    justify-self: center;
+
+}
+.foods{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.foodlist{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.fooditems{
+    height: 180px;
+    width: 185px;
+ }
+.food{
+    height: 180px;
+    width: 185px;
+}
+.noodles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.dessert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.grooming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.grocery{
+    height: 160px;
+    width: 144px;
+}
+.restaurant{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.appBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+
+    height: 251px ;
+    width:  1287px ;
+}
+.foodonline{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 52px;
+    width: 292px;
+    /* margin: 0 auto;   */
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.groceryonline{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 52px;
+    width: 292px;
+    /* margin: 0 auto; */
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.restimage1{
+    height: 189px;
+    width: 324px;
+}
+.restimage2{
+    height: 189px;
+    width: 324px;
+}
+.restimage3{
+    height: 189px;
+    width: 324px;
+}
+
+.citylist{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    /* justify-items: center; */
+    /* align-items: center; */
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #f0f0f5;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.copyrightlogo{
+    display: flex;
+    color: grey;
+    width: 80%;
+}
+ 
+.footersection{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    gap: 50px;
+}
+.company{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
