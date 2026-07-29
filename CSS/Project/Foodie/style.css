@@ -1,0 +1,109 @@
+@font-face {
+    font-family: lato;
+    src: url(./Font/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: grand;
+    src: url(./Font/GrandHotel-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+header{
+    background: url(./images/Image.png);
+    position:relative;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    margin: 20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    /* color: white; */
+    gap: 40px;
+}
+.title{
+    display: flex;
+    /* margin: 0 auto; */
+    font-family: "grand";
+    font-weight: 400;
+    font-size: 200px;
+    justify-content: center;
+    margin-top: 100px;
+    color: white;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* padding-top: 30px; */
+    width: 1429px;
+    height: 210px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+.b1head{
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.b1{
+    display:flex;
+    justify-content: center;
+    width: 325px;
+    height: 65px;
+    margin: 0 auto;
+    font-family: "lato";
+    font-weight: 400;
+    border-radius: 35px;
+    font-size: 25px;
+    color: #e8565e;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 0 ;
+    right: 0;
+}
+.page2{
+    background:url(./images/Background.png)
+}
+.title2{
+    display: flex;
+    justify-content: center;
+    font-family: "grand";
+    font-size: 125px;
+    font-weight: 400;
+    color:#e8565e;
+    padding-top: 100px;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1509px;
+    height: 210px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
