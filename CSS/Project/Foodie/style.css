@@ -14,8 +14,9 @@
     box-sizing: border-box;    
 }
 header{
-    background: url(./images/Image.png);
+    background: url(./images/Image.png) center center/cover;
     position:relative;
+    /* background-size: cover; */
 }
 .logo{
     display: flex;
@@ -36,35 +37,35 @@ header{
 ul{
     display: flex;
     list-style: none;
-    /* color: white; */
+    /* color: white;    */
     gap: 40px;
 }
 .title{
     display: flex;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     font-family: "grand";
     font-weight: 400;
-    font-size: 200px;
+    font-size: 250px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 180px;
     color: white;
 }
 .text{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    /* padding-top: 30px; */
+    /* padding-top: 60px; */
     width: 1429px;
     height: 210px;
-    font-size: 30px;
+    font-size: 40px;
     color: #ffffff;
     font-weight: 400;
     font-family: "Lato";
     text-align: center;
 }
 .b1head{
-    margin-top: 30px;
-    padding-bottom: 10px;
+    /* margin-top: 20px; */
+    padding-bottom: 130px;
 }
 .b1{
     display:flex;
@@ -78,13 +79,10 @@ ul{
     font-size: 25px;
     color: #e8565e;
     align-items: center;
-    position: absolute;
-    bottom: 100px;
-    left: 0 ;
-    right: 0;
+    
 }
 .page2{
-    background:url(./images/Background.png)
+    background:url(./images/Background.png)center center/cover;
 }
 .title2{
     display: flex;
@@ -98,12 +96,167 @@ ul{
 .text2{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto; 
     width: 1509px;
-    height: 210px;
-    font-family: "Lato";
+    height: 150px;
+    font-family: "Lato"; 
     font-weight: 400;
     font-size: 30px;
     color: #333333;
     text-align: center;
 }
+.pasta{
+    text-align: center;
+    font-family: "grand";
+    color:#e8565e;
+    font-weight: 400;
+    font-size: 67px;
+}
+.ptext{
+
+    font-family: "Lato";
+    color: #333333;
+    font-size: 22px;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-33{
+    width: 33%;
+}
+.card{
+    text-align: center;
+    padding: 10px;
+}
+.g-10{
+    gap: 10px;
+}
+
+.page3{
+    background: url(./images/page3.png) center center/cover;
+}
+.title3{
+    padding-top: 100px;
+    text-align: center;
+    font-family: "grand";
+    font-size: 125px;
+    color: #ffffff;
+}
+.text3{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1509px;
+    height: 150px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Lato";
+}
+.text3{
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+.circles{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+.circle{
+    border: 5px dashed white;
+    border-radius: 360px;
+    height: 330px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Lato";
+    color: white;
+}
+.integer{
+    font-size: 65px;
+    font-family: "Lato";
+}
+.intText{
+    font-size: 42px;
+    font-family: "Lato";
+}
+.page4{
+    background: url(./images/Background\ 3.png)center center/cover;
+}
+.title4{
+    display: flex;
+    justify-content: center;
+    font-family: "grand";
+    font-size: 125px;
+    color: #e8565e;
+    padding-top: 125px;
+}
+.text4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 32px;
+    color: #333333;
+    padding-bottom: 100px;
+}
+
+.p4card{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 100px; */
+    margin: 0 auto;
+    width: 70%;
+    /* padding-bottom: 100px; */
+    gap: 100px;
+}
+.pcard{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.logo4{
+    display: flex;
+    align-items: start;
+}
+.p1{
+    font-family: "grand";
+    font-size: 50px;
+    color: #e8565e;
+}
+.ppara{
+    font-family: "Lato";
+    font-size: 22px;
+    width: 450px;
+    height: 250px;
+    font-weight: 400;
+}
+.page5{
+    position: relative;
+    /* display: flex; */
+}
+.p5image{
+    position: absolute;
+    left: -8px;
+    float: left;
+}
+.p5content{
+    background: url(./images/Background\ copy.png)center center/cover;
+    display: flex;
+    float: right;
+}
+
