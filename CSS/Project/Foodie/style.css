@@ -128,6 +128,11 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
+.p2image{
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
 .col-33{
     width: 33%;
 }
@@ -237,6 +242,7 @@ img{
 .logo4{
     display: flex;
     align-items: start;
+    width: 100px;
 }
 .p1{
     font-family: "grand";
@@ -251,21 +257,24 @@ img{
     font-weight: 400;
 }
 .page5{
-    position: relative;
-    /* display: flex; */
+    background: url(./images/Background\ copy.png)center center/cover;
 }
 .p5image{
     position: absolute;
     left: -8px;
 }
 .p5content{
-    background: url(./images/Background\ copy.png)center center/cover;
+    
     position: absolute;
     right: 0;
     width: 1153px;
     height: 974px;
     align-content: center;
     padding-left: 300px;
+}
+.center{
+    display: block;
+    justify-items: center;
 }
 .p5title{
     font-family: "Grand";
@@ -280,6 +289,8 @@ img{
     padding-bottom: 50px;
 }
 .p5button{
+    /* display: flex; */
+    /* justify-content: left; */
     width: 322px;
     height: 65px;
     font-size: 25px;
@@ -288,6 +299,7 @@ img{
     border-radius: 32px;
     font-weight: 800;
     text-align: center;
+    margin-left: 180px;
 }
 .page6{
     background:url(./images/Background\ 3.png)center center/cover;
@@ -328,10 +340,10 @@ img{
     border-radius: 20px;
 }
 .p6icon{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
     align-items: center;
-    padding: 100px 0 80px 0 ;
+    width: 100px;
+    padding: 100px 0 50px 0 ;
 }
 .p6cardtitle{
     display: flex;
@@ -371,19 +383,20 @@ img{
     background: url(./images/Background5.png)center center/cover    ;
 }
 .chefimage{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    padding-bottom: 100px;
     padding-top: 150px;
-    padding-bottom: 50px;
 }
 .p7text{
+    padding-top: 200px;
     font-family: "Lato";
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     color: #333333;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 .p7title{
     font-family: "Grand";
@@ -416,6 +429,9 @@ img{
     color: #333333;
     padding-bottom: 20px;
 }
+.p8bar{
+    padding-bottom: 100px;
+}
 .p8search{
     display: flex;
     justify-self:center ;
@@ -425,6 +441,7 @@ img{
     align-items: center;
     border-radius: 20px;
     background-color: #ffffff;
+    /* margin-bottom: 200px; */
 }
 
 .p8stext{
@@ -445,4 +462,39 @@ img{
     height: 45px;
     width: 200px;
     justify-content: center;
+}
+footer{
+    background: url(./images/Shape.png);
+}
+.footer{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-between;
+    padding: 100px 20px;
+}
+.about{
+    width: 40%;
+}
+.aboutus{
+    color: #ffffff;
+    font-family: "Grand";
+    font-size: 54px;
+}
+.autext{
+    color:#ffffff;
+    font-family: "Lato";
+    font-size: 24px;
+}
+.abtcls{
+    color: #ffffff;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    line-height: 40px;
+}
+.grand{
+    font-family: "Grand";
+    font-size: 40px;
 }
