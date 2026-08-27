@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 29 : Shopping Discount Generator</h1>
+
+    <script>
+        const PurchaseAmount = 11000;
+        const isMember = false;
+
+        if (isMember==true) {
+            if (PurchaseAmount>=10000) {
+                console.log("Congratulations!!! You are a Member so you get extra 25% discount");
+                console.log("Your Bill is " + (PurchaseAmount - (PurchaseAmount*25/100)));
+            } else  if (PurchaseAmount>=5000) {
+                console.log("Congratulations!!! You are a Member so you get extra 15% discount");
+                console.log("Your Bill is " + (PurchaseAmount - (PurchaseAmount*15/100)));
+            }  else {
+                console.log("Congratulations!!! You are a Member so you get extra 5% discount");
+                console.log("Your Bill is " + (PurchaseAmount - (PurchaseAmount*5/100)));
+            }
+        } else {
+            if (PurchaseAmount>=10000) {
+                console.log("Congratulations!!! You get extra 20% discount");
+                console.log("Your Bill is " + (PurchaseAmount - (PurchaseAmount*20/100)));
+            } else  if (PurchaseAmount>=5000) {
+                console.log("Congratulations!!! You get extra 10% discount");
+                console.log("Your Bill is " + (PurchaseAmount - (PurchaseAmount*10/100)));
+            }  else {
+                console.log("Your Bill is " + (PurchaseAmount));
+            }
+        }
+    </script>
+</body>
+</html>

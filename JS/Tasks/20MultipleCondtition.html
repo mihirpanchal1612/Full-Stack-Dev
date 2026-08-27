@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task-20 : Multiple Condition </h1>
+
+    <script>
+        const Age = 21;
+        const hasIDcard = true;
+        const hasRegistration = true;
+        
+
+        switch(true){
+            case ( Age >=18 && hasIDcard==true && hasRegistration==false):
+                console.log("You need to register for the Exam.");
+                break;
+            case ( Age < 18 && hasIDcard==true && hasRegistration==true):
+                console.log("You need to be atleast 18 years old to register for the Exam.");
+                break;
+            case ( Age < 18 && hasIDcard==false && hasRegistration==true):
+                console.log("You need to be atleast 18 years old with ID card to register for the Exam.");
+                break;
+            case ( Age >=18 && hasIDcard==false && hasRegistration==true):
+                console.log("You need to have ID card for the Exam.");
+                break;
+            default:
+                console.log("You are allowed to enter the exam");
+                break;
+        }
+    </script>
+</body>
+</html>

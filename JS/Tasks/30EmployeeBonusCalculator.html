@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 30 : Employee Bonus Calculator</h1>
+
+    <script>
+        const Salary = 50000;
+        const Experience = 5;
+        const Rating = 7.8;
+
+        if( Experience>=5 && Rating>=8){
+            console.log(("Your Salary is " + (Salary)) + ("Your Bonus Percentage is 20%") + ("Your Bonus Amount is : " + (Salary*20/100)+".")+ ("And your Final Salary is "+ Salary + (Salary*20/100)))
+        } else if ( Experience>=3 && Rating>=7){
+            console.log(("Your Salary is " + (Salary)) + ("Your Bonus Percentage is 15%") + ("Your Bonus Amount is : " + (Salary*15/100)+".")+ ("And your Final Salary is "+ Salary + (Salary*15/100)))
+        } else if ( Experience>=1 && Rating>=6){
+            console.log(("Your Salary is " + (Salary)) + ("Your Bonus Percentage is 10%") + ("Your Bonus Amount is : " + (Salary*10/100)+".")+ ("And your Final Salary is "+ Salary + (Salary*10/100)))
+        } else {
+            console.log(("Your Salary is " + (Salary)) + ("Your Bonus Percentage is 0%") + ("Your Bonus Amount is : " + (0)+".")+ ("And your Final Salary is "+ Salary))
+        }
+    </script>
+</body>
+</html>

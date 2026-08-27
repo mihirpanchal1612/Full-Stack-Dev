@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 28 : Movie ticket Price Generator</h1>
+    <script>
+        const Age = 23;
+        const isItaWeekend = true;
+
+        if (isItaWeekend == true) {
+            switch(true){
+                case(Age<12):
+                    console.log("Your Ticket Price will be "+ 150 +". as it is a Weekend Today.");
+                    break;
+                case(Age<60):
+                    console.log("Your Ticket price will be "+ 250 + ". As it is a Weekend Today.");
+                    break;
+                case(Age>60):
+                    console.log("Your TIcket Price Will be "+ 170 + ". As it is a Weekend Today.");
+                    break;
+            }
+        } else {
+            switch(true){
+                case(Age<12):
+                    console.log("Your Ticket Price will be "+ 100 +". as it is not a Weekend Today.");
+                    break;
+                case(Age<60):
+                    console.log("Your Ticket price will be "+ 200 + ". As it is not a Weekend Today.");
+                    break;
+                case(Age>60):
+                    console.log("Your TIcket Price Will be "+ 120 + ". As it is not a Weekend Today.");
+                    break;
+            } 
+        }
+    </script>
+</body>
+</html>
