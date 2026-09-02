@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+function calculateGrade(num) {
+    
+    switch(true){
+        case(num >=90):
+        console.log("Your Grade is A");
+        break;
+        
+        case(num >=75):
+        console.log("Your Grade is B");
+        break;
+        
+        case(num >=60):
+        console.log("Your Grade is C");
+        break;
+
+        case(num >=35):
+        console.log("Your Grade is D");
+        break;
+                
+        case(num < 35):
+        console.log("Your Grade is F");
+        break;    
+        }
+    }
+
+    calculateGrade(99);
+</script>
+</body>
+</html>

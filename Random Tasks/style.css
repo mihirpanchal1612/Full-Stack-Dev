@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.width-60{
+    width: 65%;
+    position: relative;
+}
+
+.width-60 img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: 80px;
+    left: 80px;
+    z-index: 3;
+}
+
+.tagline{
+    font-size: 52px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.hero{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.hero img{
+    height: 551px;
+    width: 658px;
+    margin: 0 auto;
+}
+
+.width-40{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.log{
+    font-size: 21px;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    /* margin: 10px 0; */
+}
+
+.username{
+    margin-top: 50px;
+    border: 1px solid grey;
+    height: 60px;
+    width: 80%;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+.username input{
+    border: none;
+    /* display: flex; */
+    /* width: 100%; */
+    height: 100%;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.pwd{
+    border: 1px solid grey;
+    height: 60px;
+    width: 80%;
+    border-radius: 15px;
+    margin: 10px 0;    
+}
+
+.pwd input{border: none;
+    /* display: flex; */
+    /* width: 100%; */
+    height: 100%;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+    
+}
+
+.loginbutton{
+    background-color: #0064E0;
+    width: 80%;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.forgot{
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials{
+    margin-top: 100px;
+}
+
+.facebook{
+    margin: 10px 0;
+    background-color: #F2F4F6;
+    width: 80%;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newaccount{
+    margin: 10px 0;
+     background-color: #FFFFFF33;
+    width: 80%;
+    border:1px solid  #0064E0;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metalogo{
+    height: 12px;
+    width: 60px;
+}
