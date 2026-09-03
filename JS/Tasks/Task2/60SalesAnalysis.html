@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function analyseSalary(person, sales, target=100000) {
+            TargetAchieved = (sales/target)*100;
+            if (TargetAchieved>=100) {
+                console.log({
+                    Name: person,
+                    Sales: sales,
+                    target: target,
+                    Target_Achieved : TargetAchieved,
+                    performance : "Excellent",
+                });
+            } else  if (TargetAchieved >=80) {
+                console.log({
+                    Name: person,
+                    Sales: sales,
+                    target: target,
+                    Target_Achieved : TargetAchieved ,
+                    performance : "Good",
+                });
+            } else  if (TargetAchieved>=50) {
+                console.log({
+                    Name: person,
+                    Sales: sales,
+                    target: target,
+                    Target_Achieved : TargetAchieved ,
+                    performance : "Average",
+                });
+            } else  if (TargetAchieved<50) {
+                console.log({
+                    Name: person,
+                    Sales: sales,
+                    target: target,
+                    Target_Achieved : TargetAchieved  ,
+                    performance : "Poor",
+                });
+            } 
+        }
+
+        analyseSalary("Mihir", 200000);
+        analyseSalary("Om", 20000);
+        analyseSalary("Samina", 80000);
+        analyseSalary("Arpit", 56000);
+        analyseSalary("Pari", 75000);
+    </script>
+</body>
+</html>

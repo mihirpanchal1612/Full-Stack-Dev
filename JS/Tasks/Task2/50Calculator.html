@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calculator(a, b, operator) {
+            switch (operator) {
+                case (operator="+"):
+                    console.log(a+b);
+                    break;
+                case (operator="-"):
+                    console.log(a-b);
+                    break;
+                case (operator="*"):
+                    console.log(a*b);
+                    break;
+                case (operator="/"):
+                    console.log(a/b);
+                    break;
+                default:
+                    console.log("Choose any of this operator : +, -, *, /.");
+                    break;
+            }
+        }
+
+        Calculator(9, 3, "+");
+        Calculator(9, 3, "-");
+        Calculator(9, 3, "*");
+        Calculator(9, 3, "/");
+    </script>
+</body>
+</html>

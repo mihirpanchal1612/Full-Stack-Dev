@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Salary(name, basicSalary, bonus=5000) {
+            totalSalary = basicSalary + bonus;
+            if (totalSalary >= 100000) {
+            console.log({
+                    Name: name,
+                    TotalSalary : totalSalary,
+                    salaryCategory : "High Salary" 
+                });                
+            } else if (totalSalary >= 50000) {
+            console.log({
+                    Name: name,
+                    TotalSalary : totalSalary,
+                    salaryCategory : "Medium Salary" ,
+                });
+            }    
+            if (totalSalary < 50000) {
+            console.log({
+                    Name: name,
+                    TotalSalary : totalSalary,
+                    salaryCategory : "Entry Level" 
+                });
+            }
+        }
+
+        Salary("Mihir", 150000, 10000);
+        Salary("Arpit", 40000, 5000);
+        Salary("Krish", 60000, 3000);
+        Salary("Karan", 50000);
+        Salary("Om", 50000);
+    </script>
+</body>
+</html>
