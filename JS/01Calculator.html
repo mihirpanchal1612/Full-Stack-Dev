@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    
+</head>
+<body class="d-flex justify-content-center M3">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header text-bg-primary ">
+            <h2>Calculator</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-bg-warning">
+                <input type="text" name="" placeholder="Enter a Number1" id="num1">
+            </li>
+            <li class="list-group-item text-bg-warning">
+                <input type="text" name="" placeholder="Enter a Number2" id="num2">
+            </li>
+            <li class="list-group-item text-bg-dark">
+            
+                <button type="button" class="text-bg-success" onclick="addNumber()">+</button>
+                <button type="button" class="text-bg-success" onclick="minusNumber()">-</button>
+                <button type="button" class="text-bg-success" onclick="multiNumber()">*</button>
+                <button type="button" class="text-bg-success" onclick="divNumber()">/</button>
+
+            </li>
+        </ul>
+    <div class="card-footer text-bg-danger">
+         <h3 id="res"></h3>
+    </div>
+</div>  
+
+    
+   
+    
+   
+
+    <script>
+        let res = document.getElementById("res");
+        function addNumber() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+
+
+            res.innerText = num1+num2;
+        }
+        function minusNumber() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+
+            res.innerText = num1-num2;
+        }
+        function multiNumber() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+
+            res.innerText = num1*num2;
+        }
+        function divNumber() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+
+            res.innerText = (num1/num2).toFixed(2);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--     
+    <div class=" bg-primary">
+        <div class="num1">
+            <input type="text" id="num1" placeholder="Enter your Num1">
+        </div>
+        <div class="num2">
+            <input type="text" id="num2" placeholder="Enter your Num2">
+        </div>
+        <div class="rows">
+            <button onclick="addNumber(num1,num2)" class="button btn-light" id="addNumber">+</button>
+            <button onclick="minusNumber(num1,num2)" class="button btn-light" id="minusNumber">-</button>
+            <button onclick="multiNumber(num1,num2)" class="button btn-light" id="multiNumber">*</button>
+            <button onclick="divNumber(num1,num2)" class="button btn-light" id="divNumber">/</button>
+        </div>
+        <div class="resultoutput">
+            <input type="text" id="result">
+        </div>
+
+        <script>
+            let res = document.getElementById("result");
+        function addNumber(num1,num2) {
+            let inp1 = document.getElementById("num1");
+            let inp2 = document.getElementById("num2");
+            res.innerText = inp1+inp2; 
+        }
+        function minusNumber(num1,num2){
+            console.log(num1 - num2);
+        }
+        function multiNumber(num1,num2){
+            console.log(num1 * num2);
+        }
+        function divNumber(num1,num2){
+            console.log(num1 / num2);
+        }
+
+        function result(num1, num2) {
+        //     switch (true) {
+        //         case ():
+        //             result.innerText(addNumber(num1,num2));
+        //             break;
+                
+        //         case (-):
+        //             result.innerText(minusNumber(num1,num2));
+        //             break;
+                    
+        //         case ("*"):
+        //             result.innerText(multiNumber(num1,num2));
+        //             break;
+                    
+        //         case ("/"):
+        //             result.innerText(divNumber(num1,num2));
+        //             break;
+        //         default:
+        //             alert("Enter a valid Number");
+        //             break;
+        //     }
+        //
+        if (addNumber=="+") {
+            result.innerText(num1,num2);
+        } else {
+            alert("Enter a valid Number");
+        } 
+        }
+
+        </script>
+    </div> -->
+</body>
+</html>
