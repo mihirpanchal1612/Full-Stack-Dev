@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./instagram-social-media-network-communication-interaction-connection-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <div class="container row">
+        <section class="width-60">
+            <img src="./OIP.webp" alt="">
+            <div class="hero">
+                <span class="tagline">See Everyday Moments from your <br> Close Friends.</span>
+                <img src="./instaMobile.webp" alt="">
+            </div>
+        </section>
+        <section class="width-40">
+            <div class="firsthalf">
+            <div class="log">
+                <span><i></i>Log into Instagram</span>
+            </div>
+            <div class="username">
+                <!-- <label id="userlabel">Enter Username, Email, No.</label> -->
+                <input type="text" style="border: none;" onblur="validate(this, 'error1' ,'Username or email')" id="username" >
+            </div>
+            <span id="error1"></span>
+            <div class="pwd">
+                <!-- <label id="passlabel">Enter your password</label> -->
+                <input type="password" class="form-control" id="userPassword" placeholder="Enter your Password" onInput="showInputEye()">
+                <i class="fa-regular fa-eye eye" id="eye" onclick="showPassword()"></i>
+                <i class="fa-regular fa-eye-slash eye_cut" id="eye_cut" onclick="showPassword()"></i>
+            <span id="error2"></span>  
+            </div>
+            <span id="error2"></span>
+            <div class="" >
+                <button type="button" class="loginbutton" id="login">Log in</button>
+            </div>
+            <div class="forgot"> 
+                <div>Forgot Password?</div>
+            </div>
+            </div>
+            <div class="socials">
+                <div class="facebook"> 
+                    <div>Log in with Google</div>
+                </div>
+                <div class="newaccount">
+                    <div>Create new Account</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- JavaScript -->
+<script>
+
+        let user = document.getElementById("userLabel");
+        let pass = document.getElementById("passLabel");
+
+        function animate() {
+            
+        }
+
+        let eye = document.getElementById("eye");
+        let eye_close = document.getElementById("eye_close");
+        let usrpwd = document.getElementById("password");
+
+        function showInputEye() {
+         if (usrpwd.value.length >= 1) {
+            eye_close.style.display="block";
+         } else {
+            eye_close.style.display="none";
+         }   
+        }
+
+        function showPassword() {
+            if (usrpwd.type=="password") {
+                usrpwd.type="text";
+                eye.style.display="block";
+                eye_close.style.display="none";
+            } else {
+                usrpwd.type="password";
+                eye.style.display="none";
+                eye_close.style.display="block";
+            }
+        }
+
+        function validate(e, spnId, msg) {
+            console.log(e.value)
+            if (e.value == "") {
+                document.getElementById(spnId).innerText = `*Enter a Valid ${msg}`
+                document.getElementById(spnId).style.color = "red";
+            } else {
+                document.getElementById(spnId).innerText = ""
+            }
+        }
+</script>
+</body>
+</html>

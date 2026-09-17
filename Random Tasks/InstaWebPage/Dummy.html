@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+
+    <style>
+        .box {
+            width: 30%;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+
+        .rel {
+            position: relative;
+        }
+
+        .eye {
+            cursor: pointer;
+            position: absolute;
+            z-index: 1;
+            right: 15px;
+            top: 10px;
+
+        }
+
+        #eye {
+            display: none;
+        }
+
+        #eye_cut {
+            display: block;
+        }
+
+        .eye_cut {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            color: black;
+            right: 15px;
+            top: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            display: none;
+        }
+    </style>
+
+
+    <!-- FontAwesome CDN  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <!-- Bootstrap CSS  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="box border border-success">
+
+        <h2>Instagram</h2>
+
+        <div class="col my-3">
+            <input type="text" class="form-control" id="userName" placeholder="Enter your Name">
+            <span id="error1"></span>
+        </div>
+        <div class="col my-3 rel">
+            <i class="fa-regular fa-eye eye" id="eye" onclick="showPassword()"></i>
+            <i class="fa-regular fa-eye-slash eye_cut" id="eye_cut" onclick="showPassword()"></i>
+            <input type="password" class="form-control" id="userPassword" placeholder="Enter your Password"
+                onInput="showInputEye()">
+            <span id="error2"></span>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+         oninput="showInputEye(), validate(this, 'error2', 'password')" 
+
+        // function validate(e, spnId, msg) {
+        //     console.log(e.value)
+        //     if (e.value == "") {
+        //         // document.getElementById(spnId).innerText = "Enter Your " + msg
+        //         document.getElementById(spnId).innerText = `Enter Your ${msg}`
+        //         document.getElementById(spnId).style.color = "red"
+        //     } else {
+        //         document.getElementById(spnId).innerText = ""
+        //     }
+        // }
+
+
+        let eye = document.getElementById("eye")
+        let eyeCut = document.getElementById("eye_cut")
+        let userPassword = document.getElementById("userPassword")
+
+        eye_cut.style.display = "none"
+        
+        function showInputEye() {
+
+            if (userPassword.value.length >= 1) {
+                eye_cut.style.display = "block"
+                
+            } else {
+                eye_cut.style.display = "none"
+                
+            }
+
+            
+
+        }
+
+
+
+            
+            function showPassword() {
+                if (userPassword.type == "password") {
+                    userPassword.type = "text"
+                    eye.style.display = "block"
+                    eyeCut.style.display = "none"
+                } else {
+                    userPassword.type = "password"
+                    eye.style.display = "none"
+                    eyeCut.style.display = "block"
+                }
+            }
+
+    </script>
+</body>
+
+</html>

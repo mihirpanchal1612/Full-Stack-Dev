@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes colorchange {
+            10%{
+                background-color: blueviolet;
+            }
+            20%{
+                background-color: blue;
+            }
+            30%{
+                background-color: cadetblue;
+            }
+            40%{
+                background-color:cornflowerblue;
+            }
+            
+            50%{
+                background-color:cyan;
+            }
+            
+            60%{
+                background-color: darkblue;
+            }
+            70%{
+                background-color: darkcyan;
+            }
+            80%{
+                background-color: steelblue;
+            }
+            90%{
+                background-color: darkslateblue;
+            }
+            100%{
+                background-color: black;
+            }
+        }
+
+        #box{
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            color: yellow;
+            border: 1px solid black;
+            animation: colorchange infinite;
+        }
+
+        .press{
+            height: 50px;
+            width: 100px;
+            color: white;
+            background-color: black;
+        }
+
+        img{
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam cupiditate adipisci quae minima, voluptatum, corrupti autem architecto ducimus sunt, quas ad quasi esse saepe. Explicabo nemo maxime itaque ratione!
+    </div>
+    <input onkeyup="colorSlowChange('box')" class="press" placeholder="press UP key to animate the box"></input>
+    
+    <input onkeydown="colorChange('box')" class="press" placeholder="press DOWN key to animate the box"></input>
+
+    <input type="text" class="press" onkeypress="singleChange('box')">
+
+<script>
+    let box = document.getElementById("box")
+    function colorSlowChange() {
+        // box.style.animation="colorchange";
+        box.style.animationDuration="10s"
+    }
+
+    function colorChange() {
+        // box.style.animation="colorchange";
+        box.style.animationDuration="1s"
+    }
+
+    function singleChange() {
+        box.style.backgroundImage='src(./slice.webp)'
+        box.style.backgroundImage='url(./slice.webp);'
+    }
+</script>
+</body>
+</html>
+
+
