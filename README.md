@@ -1,2 +1,2 @@
 # Full-Stack-Dev
-Heyyy there, This repo is my First Training Repo for FUll stack using MERN Stack. 
+This repo contains all the step by step programs and practice tasks that allows you to learn  
