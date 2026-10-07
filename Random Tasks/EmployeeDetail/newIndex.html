@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="Employee-Card">
+    <div class="card" style="width: 35rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="name"></h5>
+                <p class="card-text" id="role"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="company"></li>
+                <li class="list-group-item" id="contact"></li>
+                <li class="list-group-item" id="city"></li>
+            </ul> 
+    </div>
+</div>
+<ol class="people " id="people">
+    
+</ol>
+<script>
+    let employees = [
+
+            {
+                name:"Mihir",
+                role: "Founder",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 7623078488",
+                city:"Patan",
+            },
+            {
+                name:"Arpit",
+                role: "Manager",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Om",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Pragnya",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Samina",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Hamza",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Hasnan",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Karan",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Harshit",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Aryan",
+                role: "Employee",
+                company: "MyEMS Solutions pvt ltd",
+                contact : "+91 1234657809",
+                city:"Ahmedabad",
+            },
+        ]
+    
+    let peopleDiv = document.getElementById("people");
+    employees.forEach((person, index)=>{
+        peopleDiv.innerHTML += `
+        <li class="person d-flex justify-content-around" style="width:15rem" id="person">
+                <H5>${person.name}</H5>
+                <H6>${person.role}</H6>
+
+                <button onclick="fetchProfile(${index})">
+                    View
+                </button>
+            </li> 
+     `
+    })
+    
+    const fetchProfile = (index)=>{
+        let person = employees[index];
+        document.getElementById("name").innerText = person.name;
+        document.getElementById("role").innerText = person.role;
+        document.getElementById("company").innerText = person.company;
+        document.getElementById("contact").innerText = person.contact;
+        document.getElementById("city").innerText = person.city;
+    }
+</script>
+</body>
+</html>
