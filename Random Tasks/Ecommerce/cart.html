@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+       <style>
+        @font-face{
+            src: url(./Tungsten-Bold.ttf);
+            font-family: Tungsten;
+        }
+
+        .main{
+            display: flex;
+        }
+        .width80{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .imgsize{
+            height: 300px;
+            width: 250px;  
+        }
+        .bg-custom{
+            background-color: #c02806 ;
+            font-family: tungsten;
+            font-size: 42px;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-custom text-center">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" target=""><img src="./Images/BackYard.png" alt="" height="200px" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link bg-custom " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link bg-custom" href="productPage.html">Products</a>
+                </li>
+                <li class="nav-item bg-custom">
+                    <a class="nav-link bg-custom" href="cart.html">Your Cart</a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    
+    <div style="position: relative; bottom: 0px; left: 160px;top: 25px;">
+        <img src="" >
+    </div>
+
+    <div class="container mt-4">
+
+        <h1  class="d-flex" style="margin-top: 60px;">My Cart</h1>
+
+        <!-- Cart products -->
+        <div id="cartItems" class="d-flex flex-wrap gap-3"></div>
+
+        <!-- Bill section -->
+        <div id="placeorder"></div>
+
+    </div>
+
+</body>
+<script>
+    
+    
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let cartItems = document.getElementById("cartItems");
+        let placeorder = document.getElementById("placeorder");
+        let payment = document.getElementById("payment");
+
+        let totalamount = 0;
+
+        function showCart() {
+            cartItems.innerHTML = "";
+
+            if (cart.length == 0) {
+                cartItems.innerHTML = `
+                    <div id="empty">
+                        <p>Your Cart is Empty</p>
+                        <br>
+                        <a href="./wishlist.html" class="btn btn-success mt-3">
+                            Add Items from Wishlist
+                        </a>
+                    </div>
+                `;
+                return;
+            }
+
+            cart.forEach(function(product, i) {
+                cartItems.innerHTML += `
+                    <div class="card p-3" style="width: 50rem;">
+                        <img src="${product.image}"
+                             style="height: 180px; object-fit: contain;">
+
+                        <h5 class="mt-3">${product.title}</h5>
+
+                        <p>${product.description || ""}</p>
+
+                        <h6>Price: $${product.price}</h6>
+
+                        <button class="btn btn-danger"
+                                onclick="del(${i})">
+                            Delete
+                        </button>
+                    </div>
+                `;
+            });
+        }
+
+        function del(i) {
+            cart.splice(i, 1);
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            showCart();
+            checkCart();
+        }
+
+        function checkCart() {
+            if (cart.length > 0) {
+                let total = 0;
+
+                cart.forEach(function(product) {
+                    total = total + Number(product.price);
+                });
+
+                let platformfee = 10;
+                let discount = total * 10 / 100;
+
+                totalamount = total + platformfee - discount;
+
+                placeorder.innerHTML = `
+                    <div class="bill">
+                        <h4>Total MRP: $${total.toFixed(2)}</h4>
+                        <h4>Discount: -$${discount.toFixed(2)}</h4>
+                        <h4>Platform Fee: $${platformfee.toFixed(2)}</h4>
+                        <hr>
+                        <h3>Total Amount: $${totalamount.toFixed(2)}</h3>
+
+                        <button class="btn btn-success mt-3"
+                                onclick="pay()">
+                            Place Order
+                        </button>
+                    </div>
+                `;
+            } else {
+                placeorder.innerHTML = "";
+            }
+        }
+
+</script>
+</html>
